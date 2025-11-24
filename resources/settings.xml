@@ -1,0 +1,18 @@
+<settings>
+    <category label="IGDB">
+    <setting id="screenshots_enabled" type="bool" label="Download Screenshots" default="true" />
+    <setting id="artwork_enabled" type="bool" label="Download Artwork" default="true" />
+    <setting id="igdb_clientid" type="text" label="IGDB - Client ID" option="hidden" visible="false" default="y0esrydcdgatj12oalfkwbn5s3y4kw" />
+    <setting id="igdb_clientsecret" type="text" label="IGDB - Client Secret" option="hidden" visible="false" default="fnveegkrh12o02mjdva1dn51bk0wfq" />
+    </category>
+    <category label="MobCat">
+    <setting id="rating_letter" type="bool" label="Rating - Letter Only" default="false" />
+    <setting id="rating_name" type="bool" label="Rating - Word Only" default="true" />
+    </category>
+    <category label="Features">
+    <setting id="parentheses_enabled" type="bool" label="Change 'Players/System Link 1-4' to 'Players/System Link (1-4)'" default="true" />
+    <setting id="insignia_aware" type="bool" label="Replace 'Xbox Live' with 'Insignia'" default="false" />
+    <setting id="xlink_enabled" type="bool" label="Replace 'System Link' with 'XLink Kai'" default="false" />
+    <setting id="hawk_enabled" type="bool" label="Replace 'Communicator Headset' with 'Hawk Headset'" default="false" />
+    </category>
+</settings>
