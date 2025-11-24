@@ -1,4 +1,7 @@
 <settings>
+    <category label="General">
+    <setting id="overwrite_enabled" type="bool" label="Overwrite Existing Game Information" default="false" />
+    </category>
     <category label="IGDB">
     <setting id="screenshots_enabled" type="bool" label="Download Screenshots" default="true" />
     <setting id="artwork_enabled" type="bool" label="Download Artwork" default="true" />
