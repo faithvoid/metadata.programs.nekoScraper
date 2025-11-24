@@ -15,6 +15,7 @@ screenshots_enabled    = addon.getSetting('screenshots_enabled')
 artwork_enabled    = addon.getSetting('artwork_enabled')
 rating_letter = addon.getSetting("rating_letter")
 rating_name   = addon.getSetting("rating_name")
+overwrite_enabled = addon.getSetting('overwrite_enabled')
 
 igdb_clientid    = addon.getSetting('igdb_clientid')
 igdb_clientsecret= addon.getSetting('igdb_clientsecret')
@@ -457,7 +458,7 @@ def get_details(path, handle):
     xmlpath=os.path.join(resdir,"default.xml")
     artdir=os.path.join(resdir,"artwork")
 
-    if not os.path.exists(xmlpath):
+    if overwrite_enabled == "true" or not os.path.exists(xmlpath):
         tid,reg=read_titleid_and_region(path)
         if not tid: return False
         entries=query_mobcat(tid)
